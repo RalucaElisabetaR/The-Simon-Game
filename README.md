@@ -1,4 +1,4 @@
-# The-Simon-Game
+# [The-Simon-Game using jQuery](https://ralucaelisabetar.github.io/The-Simon-Game/)
 
 ```javascript
 let buttonColours = ['red', 'blue', 'green', 'yellow']

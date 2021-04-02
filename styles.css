@@ -1,33 +1,83 @@
-body {
+body,
+html {
     text-align: center;
+
     background-color: #68cee7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: auto 0;
+}
+span {
+    color: rgb(133, 0, 0);
+    font-weight: 900;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+    color: #fef2bf;
+    margin: auto;
+}
+h1:hover {
+    filter: brightness(110%);
+}
+p {
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    font-size: 0.7rem;
+    line-height: 1rem;
+    margin: auto;
+    letter-spacing: 0.05rem;
+    color: #121111;
+    font-weight: bold;
 }
 
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+
+    color: #fef2bf;
+    margin: auto;
+}
+h2:hover {
+    filter: brightness(110%);
+}
 #level-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.5rem;
-    margin: 5%;
+    font-size: 1rem;
     color: #fef2bf;
+    margin: auto;
 }
 
 .container {
-    display: block;
-    width: 50%;
     margin: auto;
 }
 
 .btn {
-    margin: 25px;
+    margin: 20px;
     display: inline-block;
     height: 100px;
     width: 100px;
     border: 10px solid black;
     border-radius: 20%;
 }
+.btn:hover {
+    filter: brightness(110%);
+}
+a {
+    color: rgb(0, 112, 160);
+}
+a:hover {
+    filter: brightness(110%);
+}
 
 .game-over {
     background-color: red;
     opacity: 0.8;
+    margin: auto;
 }
 
 .red {
@@ -49,4 +99,11 @@ body {
 .pressed {
     box-shadow: 0 0 20px white;
     background-color: grey;
+}
+.c-down {
+    padding: 5px 0;
+    background-color: #fef2bf9e;
+}
+.c-down:hover {
+    filter: brightness(110%);
 }

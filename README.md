@@ -1,5 +1,13 @@
 # [The-Simon-Game using jQuery](https://ralucaelisabetar.github.io/The-Simon-Game/)
 
+### A simple jQuery version of the popular game everyone loved playing as a kid:
+#### - Simon Says-
+### RULES :
+##### Watch what random sequence of color is highlighted.
+##### If you complete the sequence correctly you're off to the next level.
+##### If you make a mistake it is GAME OVER !!!
+
+
 ```javascript
 let buttonColours = ['red', 'blue', 'green', 'yellow']
 

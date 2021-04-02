@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <title>The Simon Game</title>
         <link rel="stylesheet" href="styles.css" />
@@ -13,16 +14,8 @@
 
     <body>
         <h1>The Simon Game</h1>
-        <p>
-            A simple <span>jQuery</span> version of the popular game everyone
-            loved playing as a kid:<br />
-            <span>- Simon Says-</span> <br />
-            Watch what <span> random sequence </span>of color is highlighted.<br />
-            If you complete the sequence correctly you're off to the
-            <span>next level</span>.<br />
-            If you make a mistake it is <span>GAME OVER </span>!!!
-        </p>
-        <h2 id="level-title">Press A Key to Start</h2>
+
+        <h2 class="blinking" id="level-title">Press A Key to Start</h2>
         <div class="container">
             <div class="row">
                 <div type="button" id="green" class="btn green"></div>
@@ -35,8 +28,20 @@
                 <div type="button" id="blue" class="btn blue"></div>
             </div>
         </div>
-        <div class="row c-down">
-            <footer>
+        <div class="row">
+            <div>
+                <p>
+                    A simple <span>jQuery</span> version of the popular game
+                    everyone loved playing as a kid:<br />
+                    <span>- Simon Says-</span> <br />
+                    Watch what <span> random sequence </span>of color is
+                    highlighted.<br />
+                    If you complete the sequence correctly you're off to the
+                    <span>next level</span>.<br />
+                    If you make a mistake it is <span>GAME OVER </span>!!!
+                </p>
+            </div>
+            <footer class="c-down">
                 Follow Me On
                 <a href="https://github.com/RalucaElisabetaR"> GitHub</a>
             </footer>

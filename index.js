@@ -1,4 +1,5 @@
 
+
 let buttonColours = ["red", "blue", "green", "yellow"];
 
 let gamePattern = [];
@@ -7,9 +8,11 @@ let userClickedPattern = [];
 let started = false;
 let level = 0;
 
+
 $(document).keypress(function () {
   if (!started)
   {
+    $("h2").removeClass("blinking");
     $("#level-title").text("Level " + level);
     nextSequence();
     started = true;
@@ -42,7 +45,7 @@ function checkAnswer(currentLevel) {
     playSound("wrong");
     $("body").addClass("game-over");
     $("#level-title").text("Game Over, Press Any Key to Restart");
-
+    $("h2").addClass("blinking");
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);

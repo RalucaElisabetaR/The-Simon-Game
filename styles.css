@@ -4,20 +4,19 @@ html {
 
     background-color: #68cee7;
     min-height: 100vh;
+
     display: flex;
     flex-direction: column;
-    padding: 0;
-    margin: auto 0;
 }
 span {
     color: rgb(133, 0, 0);
-    font-weight: 900;
+    font-weight: 600;
 }
 h1 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #fef2bf;
-    margin: auto;
+    margin: auto 2px;
 }
 h1:hover {
     filter: brightness(110%);
@@ -29,31 +28,29 @@ p {
 
     font-size: 0.7rem;
     line-height: 1rem;
-    margin: auto;
+
     letter-spacing: 0.05rem;
     color: #121111;
-    font-weight: bold;
+    font-weight: 500;
 }
 
 h2 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1rem;
 
-    color: #fef2bf;
-    margin: auto;
+    color: #fffbea;
+    margin: auto 0;
 }
 h2:hover {
     filter: brightness(110%);
 }
 #level-title {
     font-family: 'Press Start 2P', cursive;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #fef2bf;
-    margin: auto;
 }
 
 .container {
-    margin: auto;
+    margin: auto 0;
 }
 
 .btn {
@@ -106,4 +103,24 @@ a:hover {
 }
 .c-down:hover {
     filter: brightness(110%);
+}
+.blinking {
+    animation: blinkingText 1s infinite;
+}
+@keyframes blinkingText {
+    0% {
+        color: #fef2bf;
+    }
+    49% {
+        color: #fef2bf;
+    }
+    60% {
+        color: transparent;
+    }
+    99% {
+        color: transparent;
+    }
+    100% {
+        color: #fef2bf;
+    }
 }
